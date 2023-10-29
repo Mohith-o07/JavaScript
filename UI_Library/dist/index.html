@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Library</title>
+    <style>
+        body{font-size: 1.2em;}
+        .container{margin: 40px; margin-top: 60px;}
+        button{
+            width:200px;
+            background: lightgray;
+            padding: 10px;
+            margin: 20px auto;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- tooltip -->
+        <p>Hare Krishna Hare Krishna Krishna Krishna 
+            Hare Hare Hare Rama Hare Rama Rama Rama Hare Hare. <span class="tooltip" 
+            data-message="I'm a tooltip!">Radha Krishna</span>, krishna and his co. are 
+            ready to go to Barsana.
+        </p>
+        <h2>Services</h2>
+        <!-- dropdown -->
+        <div class="dropdown">
+        <div class="trigger">Radha Krishna episode 8/9</div>
+        <div class="content">
+            <p>faith is the root of love. Faith and truth are two sides of the same coin.
+                No faith, no truth and vice-versa.
+                Faith allows us to find the truth, which ultimately makes us love this world.
+                Love, unlove, and love again!
+            </p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <div class="trigger">radha Krishna episode 9/10</div>
+        <div class="content">
+            <p>Kansa deploys soldiers to burn Gokulam. Krishna saves all the people by taking them
+                to a safe place. Then Krishna makes magic to make soliers believe that they burned 
+                Gokulam, along with Krishna. Kansa shows his pride and thinks he won over god's plan.
+            </p>
+        </div>
+    </div>
+    <h2>More Info</h2>
+    <!-- tabs -->
+    <div class="tabs">
+        <ul>
+            <li class="trigger active" data-target="#about">About</li>
+            <li class="trigger" data-target="#delivery">Delivery info</li>
+            <li class="trigger" data-target="#returns">Returns info</li>
+        </ul>
+        <div id="about" class="content active">
+            <h3>about</h3>
+            <p>every object in JS has a prototype. Prototypes contain all the methods for that
+                object type. When we create array, all the methods are not stored on array, but 
+                points to those on array prototype.
+            </p>
+        </div>
+        <div id="delivery" class="content">
+            <h3>Radha</h3>
+            <p>All the people of Gokulam goes to Barsana to stay low for some days. Vrishabhana and his
+            co. welcomes everyone with ease. Krishna gets emotional as Radha chases him to punish him,
+            which radha has promised in golokam. -Episode 14.</p>
+        </div>
+        <div id="returns" class="content">
+            <h3>Krishna</h3>
+            <p>All the people of Gokulam goes to Barsana to stay low for some days. Vrishabhana and his
+            co. welcomes everyone with ease. Krishna gets emotional as Radha chases him to punish him,
+            which radha has promised in golokam. -Episode 14 (2).</p>
+      </div>
+    </div>
+</div>
+<button class="snackbar-trigger">click me</button>
+    <script src="assets/bundle.js"></script>
+</body>
+</html>
